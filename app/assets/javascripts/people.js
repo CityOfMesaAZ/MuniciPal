@@ -21,7 +21,7 @@ var people = [
    "phone": "480-644-2388",
    "email": "mayor@Mesaaz.gov",
    "website_url": "http://www.mesaaz.gov/mayor/",
-   "photo_url": "http://www.mesaaz.gov/mayor/images/giles_sm.jpg"
+   "photo_url": "giles_sm.jpg"
  },
  {
    "title": "City Councilmember",
