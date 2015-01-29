@@ -5,14 +5,12 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
 
   <!--[if lte IE 8]>
-      <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/grids-responsive-old-ie-min.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/g/pure@0.5.0(pure-min.css+grids-responsive-old-ie-min.css)">
   <![endif]-->
   <!--[if gt IE 8]><!-->
-      <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/grids-responsive-min.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/g/pure@0.5.0(pure-min.css+grids-responsive-min.css)">
   <!--<![endif]-->
 
 
@@ -28,35 +26,9 @@
   <%= yield :head %>
 </head>
 
-<div id="topbar" class="pure-menu pure-menu-open pure-menu-horizontal pure-menu-pull-right">
-  <div class="pure-menu-heading">
-    <a href="/"><img src="/assets/logo.png" alt="MuniciPal"></a>
-  </div>
-
-    <ul class="mobile-menu-toggle">
-      <li><a href="#">MENU</a></li>
-    </ul>
-
-    <ul class="hide-sm mobile-menu">
-      <li><a href="/mayor">Mayor</a></li>
-      <li class="pure-dropdown">
-        <a href="#">Councilmembers<span class="arrow"></span></a>
-        <ul class="pure-menu-children">
-          <li><a href="/?district=1">Dave Richins - 1</a></li>
-          <li><a href="/?district=2">Alex Finter - 2</a></li>
-          <li><a href="/?district=3">Dennis Kavanaugh - 3</a></li>
-          <li><a href="/?district=4">Chris Glover - 4</a></li>
-          <li><a href="/?district=5">David Luna - 5</a></li>
-          <li><a href="/?district=6">Kevin Thompson - 6</a></li>
-          <li><a href="/?district=all">View All Agenda Items</a></li>
-        </ul>
-      </li>
-      <li><a href="/manager">City Manager</a></li>
-    </ul>
-</div>
-
 <body class="initial">
+  <%= render "layouts/topbar"%>
 	<%= yield %>
+  <%= render "layouts/footer"%>
 </body>
-<%= render "layouts/footer"%>
 </html>
